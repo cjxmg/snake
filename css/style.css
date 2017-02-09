@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #bbb;
+}
+ul{
+	list-style: none;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.wrap{
+	width: 336px;
+	position: absolute;
+	background: #fff;
+	top: 45px;
+	box-shadow: 0 0 10px #666;
+	overflow: hidden;
+}
+.title{
+	height: 62px;
+	cursor: default;
+	background: linear-gradient(to bottom,#85AFF3,#679BEE,#4587EE,#4274C4,#3A6AB7);
+}
+.title .top{
+	line-height: 32px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+}
+.title .hScore{
+	float: left;
+	width: 168px;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+}
+.title .score{
+	float: left;
+	width: 168px;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+}
+.boxWrap{
+	background: url(../img/bg.jpg) 0 0 no-repeat;
+	background-size: 336px 420px;
+}
+.boxWrap li div{
+	width: 12px;
+	height: 12px;
+	float: left;	
+}
+.snake{
+	background: #000 !important;
+	box-shadow: 1px 1px 8px #222;
+}
+.egg{
+	background: red !important;
+}
+#menu{
+	position: absolute;
+	width: 100%;
+	height: 420px;
+	top: 62px;
+	left: 0;
+	background: url(../img/menu.png) 0 0 no-repeat;
+	background-size: 336px 420px;
+	transition: all 0.6s 0.3s; 
+}
+#btn{
+	position: absolute;
+	bottom: 80px;
+	left: 103px;
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 22px;
+	border-style: none;
+	border-radius: 10px;
+	background: url(../img/btn.png) 0 0 no-repeat;
+	background-size: 120px 50px;
+	transition: all 0.2s;
+	border-radius: 10px;
+	overflow: hidden;
+}
+#btn:active{
+	bottom: 78px;
+}
+#btn1,#btn2,#btn3{
+	position: absolute;
+	bottom: 160px;
+	width: 90px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	color: white;
+	border-style: none;
+	border-radius: 10px;
+	background: url(../img/btn2.png) 0 0 no-repeat;
+	background-size: 90px 40px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+#btn1{
+	left: 18px;
+}
+#btn2{
+	left: 124px;
+}
+#btn3{
+	left: 228px;
+}
+.gameOver{
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	transition: all 0.7s;
+	transform: scale(0);
+	text-align: center;
+	line-height: 50px;
+	font-size: 24px;
+}
+#quit,#again{
+	top: 120px;
+	position: absolute;
+	height: 40px;
+	width: 90px;
+	font-size: 18px;
+	line-height: 40px;
+	text-decoration: underline;
+	font-weight: bold;
+	color: #333;
+	cursor: pointer;
+}
+#again{
+	left: 50px;
+}
+#quit{
+	left: 165px;
+}
+#again:hover{
+	color: #A03FC9;
+}
+#quit:hover{
+	color: #A03FC9;
+}
+.author{
+	text-align: center;
+	font-size: 18px;
+	line-height: 32px;
+}
